@@ -49,11 +49,11 @@ def extract_bus_details(url):
             #Clicking Route
             element = driver.find_element(By.XPATH, '//*[@class="D117_main D117_container"]/div['+str(i)+']/div[1]/a')
             driver.execute_script("arguments[0].click();", element)
-            time.sleep(5)
+            time.sleep(3)
             #Click View Buses
             view_seat = driver.find_element(By.XPATH, '//*[@class="button"]')
             view_seat.click()
-            time.sleep(5)
+            time.sleep(3)
 
             #Looping the Buses
             for j in range(1,20):
